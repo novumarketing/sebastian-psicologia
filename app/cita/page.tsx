@@ -3,7 +3,7 @@ import Appointments from '@/components/Appointments'
 import Footer from '@/components/Footer'
 
 export const metadata = {
-  title: 'Agendar cita | Mtro. Sebastián Escorza',
+  title: 'Agendar cita | Psic. Sebastián Escorza',
   description: 'Agenda tu primera consulta de psicoterapia.',
 }
 
