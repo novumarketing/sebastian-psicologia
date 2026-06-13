@@ -23,7 +23,7 @@ export default function Appointments() {
   const handleWhatsApp = (e: React.FormEvent) => {
     e.preventDefault()
     const msg = encodeURIComponent(
-      'Hola Mtro. Sebastián, me gustaría agendar una cita.' +
+      'Hola Psic. Sebastián, me gustaría agendar una cita.' +
       String.fromCharCode(10) + String.fromCharCode(10) +
       'Nombre: ' + form.name +
       String.fromCharCode(10) + 'Teléfono: ' + form.phone +

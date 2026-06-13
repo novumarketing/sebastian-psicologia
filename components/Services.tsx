@@ -46,9 +46,32 @@ export default function Services() {
           <span className="text-primary-600 text-sm font-semibold uppercase tracking-widest">Servicios</span>
           <h2 className="mt-2 text-3xl sm:text-4xl font-bold text-slate-900">¿En qué puedo ayudarte?</h2>
           <p className="mt-4 text-slate-500 max-w-xl mx-auto">
-            Ofrezco diferentes modalidades terapéuticas, todas bajo el enfoque ACC,
+            Ofrezco diferentes modalidades terapéuticas, todas con base en la Terapia Cognitivo-Conductual (TCC),
             adaptadas a las necesidades específicas de cada persona.
           </p>
+        </div>
+
+        {/* Featured: TCC (enfoque principal) */}
+        <div className="mb-8 rounded-2xl bg-primary-700 text-white p-8 md:p-10 shadow-xl">
+          <span className="inline-block bg-white/15 text-white text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-4">Enfoque principal</span>
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold mb-3">Terapia Cognitivo-Conductual (TCC)</h3>
+              <p className="text-primary-100 leading-relaxed">
+                Mi enfoque principal: un modelo psicoterapéutico de eficacia comprobada y respaldado por amplia evidencia científica. Trabajamos juntos para identificar y transformar los patrones de pensamiento y conducta que generan malestar, con herramientas prácticas y resultados medibles.
+              </p>
+            </div>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {['Reestructuración cognitiva', 'Manejo de ansiedad', 'Manejo de depresión', 'Técnicas basadas en evidencia', 'Herramientas prácticas', 'Resultados medibles'].map((h) => (
+                <li key={h} className="flex items-center gap-2 text-sm text-primary-50">
+                  <svg className="w-5 h-5 text-white shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                  </svg>
+                  {h}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         {/* Cards */}

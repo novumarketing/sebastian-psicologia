@@ -29,7 +29,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-xl md:text-2xl text-primary-100 mb-4 font-light">
-          Mtro. C. Sebastián Escorza Reyes
+          Psic. C. Sebastián Escorza Reyes
         </p>
         <p className="text-base md:text-lg text-primary-200 mb-12 max-w-2xl mx-auto leading-relaxed">
           Psicólogo especialista en Terapia Cognitivo-Conductual (TCC) con Aceptación y Compromiso (ACC).

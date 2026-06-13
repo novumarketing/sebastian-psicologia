@@ -9,7 +9,7 @@ export default function About() {
           <div className="relative overflow-hidden rounded-2xl shadow-2xl aspect-[3/4] max-w-sm mx-auto lg:mx-0 bg-primary-100">
             <img
               src="/sebastian.jpg"
-              alt="Mtro. C. Sebastián Escorza Reyes"
+              alt="Psic. C. Sebastián Escorza Reyes"
               className="w-full h-full object-cover object-top"
             />
           </div>
@@ -33,7 +33,7 @@ export default function About() {
             Acompañamiento profesional con base científica
           </h2>
           <p className="text-slate-600 leading-relaxed mb-4">
-            Soy Mtro. C. Sebastián Escorza Reyes, psicoterapeuta especializado en <strong className="text-slate-800">Terapia Cognitivo-Conductual (TCC)</strong>, un enfoque de eficacia comprobada y respaldado por amplia evidencia científica, que complemento con herramientas de Aceptación y Compromiso (ACC).
+            Soy Psic. C. Sebastián Escorza Reyes, psicoterapeuta especializado en <strong className="text-slate-800">Terapia Cognitivo-Conductual (TCC)</strong>, un enfoque de eficacia comprobada y respaldado por amplia evidencia científica, que complemento con herramientas de Aceptación y Compromiso (ACC).
           </p>
           <p className="text-slate-600 leading-relaxed mb-8">
             Mi trabajo se centra en ayudarte a identificar y transformar los patrones de pensamiento y conducta que generan malestar, desarrollando herramientas prácticas para afrontar la ansiedad, la depresión y los retos del día a día, y para actuar conforme a lo que verdaderamente importa para ti.
