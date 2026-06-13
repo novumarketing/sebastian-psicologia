@@ -3,7 +3,7 @@ import TCC from '@/components/TCC'
 import Footer from '@/components/Footer'
 
 export const metadata = {
-  title: 'Terapia Cognitivo-Conductual | Mtro. Sebastián Escorza',
+  title: 'Terapia Cognitivo-Conductual | Psic. Sebastián Escorza',
   description: 'El enfoque psicoterapéutico con mayor respaldo científico en el mundo.',
 }
 
