@@ -1,20 +1,27 @@
+import Link from 'next/link'
+
 export default function About() {
   return (
-    <section id="sobre-mi" className="py-24 bg-slate-50">
-      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
-        {/* Visual placeholder */}
+    <section id="sobre-mi" className="py-24 px-6 bg-white">
+      <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        {/* Left - Photo */}
         <div className="relative">
-          <div className="w-full aspect-square max-w-sm mx-auto bg-gradient-to-br from-primary-100 to-primary-200 rounded-3xl flex items-center justify-center shadow-xl">
-            {/* Replace with <Image src="/foto.jpg" ... /> when a photo is available */}
-            <svg className="w-32 h-32 text-primary-400" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z" />
-            </svg>
+          <div className="relative overflow-hidden rounded-2xl shadow-2xl aspect-[3/4] max-w-sm mx-auto lg:mx-0 bg-primary-100">
+            <img
+              src="/sebastian.jpg"
+              alt="Mtro. C. Sebastian Escorza Reyes"
+              className="w-full h-full object-cover object-top"
+              onError={(e) => {
+                const t = e.currentTarget
+                t.style.display = 'none'
+                t.parentElement!.innerHTML += '<div class="w-full h-full flex items-center justify-center"><svg class=\"w-24 h-24 text-primary-300\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\"/></svg></div>'
+              }}
+            />
           </div>
-          {/* Floating card */}
-          <div className="absolute -bottom-4 -right-4 bg-white rounded-2xl shadow-lg px-5 py-4 flex items-center gap-3">
-            <div className="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center">
-              <svg className="w-5 h-5 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          <div className="absolute -bottom-4 right-0 lg:-right-4 bg-white rounded-xl p-4 shadow-lg border border-slate-100 flex items-center gap-3">
+            <div className="w-9 h-9 bg-primary-100 rounded-full flex items-center justify-center">
+              <svg className="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
               </svg>
             </div>
             <div>
@@ -24,47 +31,50 @@ export default function About() {
           </div>
         </div>
 
-        {/* Content */}
+        {/* Right */}
         <div>
-          <span className="text-primary-600 text-sm font-semibold uppercase tracking-widest">Sobre mí</span>
-          <h2 className="mt-2 text-3xl sm:text-4xl font-bold text-slate-900 leading-snug">
-            Acompañamiento profesional con base científica
+          <p className="text-primary-600 font-semibold text-sm uppercase tracking-widest mb-3">SOBRE MI</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-6">
+            Acompanamiento profesional con base cientifica
           </h2>
-          <p className="mt-5 text-slate-600 leading-relaxed">
-            Soy Mtro. C. Sebastián Escorza Reyes, psicoterapeuta con especialización en{ ' '}
-            <strong className="text-slate-800">Terapia de Aceptación y Compromiso (ACC)</strong>, un enfoque de
-            tercera generación respaldado por amplia evidencia científica.
+          <p className="text-slate-600 leading-relaxed mb-4">
+            Soy Mtro. C. Sebastian Escorza Reyes, psicoterapeuta con
+            especializacion en <strong className="text-slate-800">Terapia de Aceptacion y Compromiso (ACC)</strong>, un
+            enfoque de tercera generacion respaldado por amplia evidencia
+            cientifica.
           </p>
-          <p className="mt-4 text-slate-600 leading-relaxed">
-            Mi trabajo se centra en ayudarte a desarrollar flexibilidad psicológica: la capacidad de estar en
-            contacto pleno con el momento presente y actuar de acuerdo a lo que verdaderamente importa para ti,
-            incluso en presencia de pensamientos o emociones difíciles.
+          <p className="text-slate-600 leading-relaxed mb-8">
+            Mi trabajo se centra en ayudarte a desarrollar flexibilidad psicologica: la
+            capacidad de estar en contacto pleno con el momento presente y actuar
+            de acuerdo a lo que verdaderamente importa para ti, incluso en presencia
+            de pensamientos o emociones dificiles.
           </p>
 
-          <div className="mt-8 grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-3 mb-8">
             {[
               'Terapia individual',
               'Terapia de pareja',
               'Manejo de crisis',
-              'Flexibilidad psicológica',
+              'Flexibilidad psicologica',
             ].map((item) => (
-              <div key={item} className="flex items-center gap-2 text-slate-700">
-                <div className="w-5 h-5 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg className="w-3 h-3 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <span className="text-sm">{item}</span>
+              <div key={item} className="flex items-center gap-2">
+                <svg className="w-5 h-5 text-primary-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7"/>
+                </svg>
+                <span className="text-sm text-slate-700">{item}</span>
               </div>
             ))}
           </div>
 
-          <a
-            href="#cita"
-            className="mt-8 inline-block bg-primary-700 text-white font-semibold px-7 py-3 rounded-full hover:bg-primary-800 transition-colors"
+          <Link
+            href="/cita"
+            className="inline-flex items-center gap-2 bg-primary-700 text-white font-semibold px-6 py-3 rounded-full hover:bg-primary-800 transition-colors"
           >
             Solicitar consulta
-          </a>
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/>
+            </svg>
+          </Link>
         </div>
       </div>
     </section>
