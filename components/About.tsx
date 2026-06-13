@@ -11,11 +11,6 @@ export default function About() {
               src="/sebastian.jpg"
               alt="Mtro. C. Sebastian Escorza Reyes"
               className="w-full h-full object-cover object-top"
-              onError={(e) => {
-                const t = e.currentTarget
-                t.style.display = 'none'
-                t.parentElement!.innerHTML += '<div class="w-full h-full flex items-center justify-center"><svg class=\"w-24 h-24 text-primary-300\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\"/></svg></div>'
-              }}
             />
           </div>
           <div className="absolute -bottom-4 right-0 lg:-right-4 bg-white rounded-xl p-4 shadow-lg border border-slate-100 flex items-center gap-3">

@@ -59,8 +59,8 @@ export default function Hero() {
 
         <div className="mt-20 grid grid-cols-3 gap-8 border-t border-white/20 pt-10">
           {[
-            { value: '8+', label: 'Años de experiencia' },
-            { value: '500+', label: 'Pacientes atendidos' },
+            { value: '3', label: 'Años de experiencia' },
+            { value: '200+', label: 'Pacientes atendidos' },
             { value: '2', label: 'Consultorios en Hidalgo' },
           ].map((s) => (
             <div key={s.label} className="text-center">
