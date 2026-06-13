@@ -30,7 +30,7 @@ export default function About() {
         <div>
           <p className="text-primary-600 font-semibold text-sm uppercase tracking-widest mb-3">SOBRE MI</p>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-6">
-            Acompanamiento profesional con base cientifica
+            Acompañamiento profesional con base científica
           </h2>
           <p className="text-slate-600 leading-relaxed mb-4">
             Soy Mtro. C. Sebastian Escorza Reyes, psicoterapeuta con
