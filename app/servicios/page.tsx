@@ -3,7 +3,7 @@ import Services from '@/components/Services'
 import Footer from '@/components/Footer'
 
 export const metadata = {
-  title: 'Servicios | Mtro. Sebastián Escorza',
+  title: 'Servicios | Psic. Sebastián Escorza',
   description: 'Terapia individual, de pareja y manejo de crisis en Pachuca, Hidalgo.',
 }
 
