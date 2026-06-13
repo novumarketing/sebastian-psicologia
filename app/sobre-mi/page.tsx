@@ -3,8 +3,8 @@ import About from '@/components/About'
 import Footer from '@/components/Footer'
 
 export const metadata = {
-  title: 'Sobre mí | Mtro. Sebastián Escorza',
-  description: 'Conoce al Mtro. C. Sebastián Escorza Reyes, psicólogo especializado en ACC.',
+  title: 'Sobre mí | Psic. Sebastián Escorza',
+  description: 'Conoce al Psic. C. Sebastián Escorza Reyes, psicólogo especializado en ACC.',
 }
 
 export default function SobreMiPage() {
