@@ -1,65 +1,77 @@
+import Link from 'next/link'
+
 export default function Hero() {
   return (
-    <section
-      id="inicio"
-      className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-900 via-primary-800 to-slate-800 overflow-hidden"
-    >
-      {/* Decorative circles */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-primary-700 opacity-20 rounded-full -translate-x-1/2 -translate-y-1/2" />
-      <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-400 opacity-10 rounded-full translate-x-1/3 translate-y-1/3" />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary-900 via-primary-800 to-primary-600">
+      {/* Background pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+              <path d="M 60 0 L 0 0 0 60" fill="none" stroke="white" strokeWidth="1"/>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#grid)" />
+        </svg>
+      </div>
 
-      <div className="relative max-w-4xl mx-auto px-6 text-center text-white">
-        {/* Badge */}
-        <span className="inline-block bg-white/10 border border-white/20 text-blue-200 text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
-          Psicoterapia Especializada · ACC
-        </span>
+      {/* Decorative blobs */}
+      <div className="absolute top-20 right-10 w-72 h-72 bg-primary-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" />
+      <div className="absolute bottom-20 left-10 w-96 h-96 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-15 animate-pulse" style={{animationDelay:'2s'}} />
 
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-4">
-          Mtro. C. Sebastián
-          <br />
-          <span className="text-blue-300">Escorza Reyes</span>
+      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
+        <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-8 text-sm font-medium">
+          <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+          Consultas presenciales y en línea disponibles
+        </div>
+
+        <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
+          Recupera tu
+          <span className="block text-blue-300">bienestar mental</span>
         </h1>
 
-        <p className="text-lg sm:text-xl text-blue-100 max-w-2xl mx-auto mb-10 leading-relaxed">
-          Psicólogo especializado en Terapia de Aceptación y Compromiso (ACC).
-          Acompañamiento profesional para vivir una vida más plena, flexible y significativa.
+        <p className="text-xl md:text-2xl text-blue-100 mb-4 font-light">
+          Mtro. C. Sebastián Escorza Reyes
+        </p>
+        <p className="text-base md:text-lg text-blue-200 mb-12 max-w-2xl mx-auto leading-relaxed">
+          Psicólogo especialista en Terapia Cognitivo-Conductual (TCC) con Aceptación y Compromiso (ACC).
+          Atención profesional, empática y basada en evidencia.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="#cita"
-            className="bg-white text-primary-800 font-semibold px-8 py-3.5 rounded-full hover:bg-blue-50 transition-colors shadow-lg"
+          <Link
+            href="/cita"
+            className="inline-flex items-center justify-center gap-2 bg-white text-primary-800 font-semibold px-8 py-4 rounded-full hover:bg-blue-50 transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
           >
-            Agendar consulta
-          </a>
-          <a
-            href="#sobre-mi"
-            className="border border-white/40 text-white font-medium px-8 py-3.5 rounded-full hover:bg-white/10 transition-colors"
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            Agendar cita ahora
+          </Link>
+          <Link
+            href="/sobre-mi"
+            className="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm border border-white/30 text-white font-semibold px-8 py-4 rounded-full hover:bg-white/20 transition-all duration-200"
           >
             Conocer más
-          </a>
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </Link>
         </div>
 
-        {/* Stats */}
-        <div className="mt-16 grid grid-cols-3 gap-6 max-w-lg mx-auto border-t border-white/10 pt-10">
+        {/* Stats row */}
+        <div className="mt-20 grid grid-cols-3 gap-8 border-t border-white/20 pt-10">
           {[
-            { value: 'ACC', label: 'Enfoque terapéutico' },
-            { value: '3', label: 'Modalidades de atención' },
-            { value: '2', label: 'Consultorios' },
-          ].map((stat) => (
-            <div key={stat.label}>
-              <p className="text-2xl font-bold text-white">{stat.value}</p>
-              <p className="text-xs text-blue-200 mt-1">{stat.label}</p>
+            { value: '8+', label: 'Años de experiencia' },
+            { value: '500+', label: 'Pacientes atendidos' },
+            { value: '2', label: 'Consultorios en Hidalgo' },
+          ].map((s) => (
+            <div key={s.label} className="text-center">
+              <div className="text-3xl font-bold text-white">{s.value}</div>
+              <div className="text-sm text-blue-200 mt-1">{s.label}</div>
             </div>
           ))}
         </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <svg className="w-6 h-6 text-white/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-        </svg>
       </div>
     </section>
   )
