@@ -3,7 +3,7 @@ import Locations from '@/components/Locations'
 import Footer from '@/components/Footer'
 
 export const metadata = {
-  title: 'Consultorios | Mtro. Sebastián Escorza',
+  title: 'Consultorios | Psic. Sebastián Escorza',
   description: 'Consultorios en Pachuca, Hidalgo: Medical Center Jardines del Sur y Hospital Intermédica.',
 }
 
