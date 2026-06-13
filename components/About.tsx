@@ -16,7 +16,7 @@ export default function About() {
           <div className="absolute -bottom-4 right-0 lg:-right-4 bg-white rounded-xl p-4 shadow-lg border border-slate-100 flex items-center gap-3">
             <div className="w-9 h-9 bg-primary-100 rounded-full flex items-center justify-center">
               <svg className="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 1 9 9 0 0118 1z"/>
               </svg>
             </div>
             <div>
@@ -63,7 +63,7 @@ export default function About() {
 
           <Link
             href="/cita"
-            className="inline-flex items-center gap-2 bg-primary-700 text-white font-semibold px-6 py-3 rounded-full hover:bg-primary-800 transition-colors"
+            className="inline-flex items-center gap-2 bg-primary-700 text-white font-semibold px-6 py-3 rounded-full hover:bg-primary-800 hover:scale-105 hover:shadow-lg transition-all"
           >
             Solicitar consulta
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

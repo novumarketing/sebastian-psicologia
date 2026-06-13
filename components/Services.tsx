@@ -3,7 +3,7 @@ const services = [
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
-          d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+          d="M16 7a4 4 0 11-8 0 4 4 0 018 1zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
       </svg>
     ),
     title: 'Terapia Individual',
@@ -15,7 +15,7 @@ const services = [
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
-          d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+          d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 1z" />
       </svg>
     ),
     title: 'Terapia para Parejas',
@@ -56,7 +56,7 @@ export default function Services() {
           {services.map((service) => (
             <div
               key={service.title}
-              className="group bg-slate-50 rounded-2xl p-7 hover:bg-primary-700 transition-colors duration-300 cursor-default"
+              className="group bg-slate-50 rounded-2xl p-7 hover:bg-primary-700 hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-default"
             >
               <div className="w-14 h-14 bg-primary-100 group-hover:bg-white/20 rounded-xl flex items-center justify-center text-primary-700 group-hover:text-white transition-colors mb-5">
                 {service.icon}
@@ -64,13 +64,13 @@ export default function Services() {
               <h3 className="text-lg font-semibold text-slate-900 group-hover:text-white transition-colors mb-3">
                 {service.title}
               </h3>
-              <p className="text-sm text-slate-600 group-hover:text-blue-100 transition-colors leading-relaxed mb-5">
+              <p className="text-sm text-slate-600 group-hover:text-primary-100 transition-colors leading-relaxed mb-5">
                 {service.description}
               </p>
               <ul className="space-y-1.5">
                 {service.highlights.map((h) => (
-                  <li key={h} className="flex items-center gap-2 text-xs text-slate-500 group-hover:text-blue-200 transition-colors">
-                    <span className="w-1.5 h-1.5 bg-primary-400 group-hover:bg-blue-300 rounded-full flex-shrink-0" />
+                  <li key={h} className="flex items-center gap-2 text-xs text-slate-500 group-hover:text-primary-200 transition-colors">
+                    <span className="w-1.5 h-1.5 bg-primary-400 group-hover:bg-primary-300 rounded-full flex-shrink-0" />
                     {h}
                   </li>
                 ))}
