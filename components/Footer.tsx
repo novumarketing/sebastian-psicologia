@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Footer() {
   const navLinks = [
     ['Inicio', '/'],
-    ['Sobre mí', '/sobre-mi'],
+    ['Sobre mi', '/sobre-mi'],
     ['Servicios', '/servicios'],
     ['Consultorios', '/consultorios'],
     ['Agendar cita', '/cita'],
@@ -12,18 +12,16 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900 text-slate-400 py-16 px-6">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
-        {/* Brand */}
         <div>
-          <h3 className="text-white font-semibold text-lg mb-1">Mtro. Sebastián Escorza</h3>
+          <h3 className="text-white font-semibold text-lg mb-1">Mtro. Sebastian Escorza</h3>
           <p className="text-primary-400 text-sm mb-4">Psicoterapia ACC</p>
           <p className="text-sm leading-relaxed">
-            Acompañamiento psicoteréutico profesional con base en Terapia de Aceptación y Compromiso.
+            Acompanamiento psicoterapeutico profesional con base en Terapia de Aceptacion y Compromiso.
           </p>
         </div>
 
-        {/* Nav */}
         <div>
-          <h4 className="text-white font-semibold mb-4">Navegación</h4>
+          <h4 className="text-white font-semibold mb-4">Navegacion</h4>
           <ul className="space-y-2">
             {navLinks.map(([label, href]) => (
               <li key={href}>
@@ -35,7 +33,6 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Contact */}
         <div>
           <h4 className="text-white font-semibold mb-4">Contacto</h4>
           <ul className="space-y-3 text-sm">
@@ -58,15 +55,21 @@ export default function Footer() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
               </svg>
-              <span>Medical Center Jardines del Sur<br />Hospital Intermédica · Pachuca, Hgo.</span>
+              <span>Medical Center Jardines del Sur<br />Hospital Intermedica · Pachuca, Hgo.</span>
             </li>
           </ul>
         </div>
       </div>
 
       <div className="max-w-6xl mx-auto mt-12 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
-        <span>© 2026 Mtro. C. Sebastián Escorza Reyes. Todos los derechos reservados.</span>
-        <span>Psicoterapia ACC · Pachuca, Hidalgo</span>
+        <span>2026 Mtro. C. Sebastian Escorza Reyes. Todos los derechos reservados.</span>
+        <div className="flex items-center gap-3 flex-wrap justify-center">
+          <span>Psicoterapia ACC · Pachuca, Hidalgo</span>
+          <span className="text-slate-700">·</span>
+          <a href="https://novumarketing.mx" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 transition-colors font-medium">
+            Desarrollado por NOVU
+          </a>
+        </div>
       </div>
     </footer>
   )
