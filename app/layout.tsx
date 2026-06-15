@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import WhatsAppFloat from '@/components/WhatsAppFloat'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://sebastian-psicologia.vercel.app'),
@@ -33,6 +34,56 @@ export const metadata: Metadata = {
   },
 }
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Physician',
+  name: 'Psic. C. Sebastián Escorza Reyes',
+  description:
+    'Psicólogo clínico especializado en Terapia Cognitivo-Conductual (TCC) y Terapia de Aceptación y Compromiso (ACT).',
+  knowsAbout: [
+    'Psicología clínica',
+    'Terapia Cognitivo-Conductual (TCC)',
+    'Terapia de Aceptación y Compromiso (ACT)',
+    'Ansiedad',
+    'Depresión',
+    'Terapia de pareja',
+  ],
+  url: 'https://sebastian-psicologia.vercel.app',
+  image: 'https://sebastian-psicologia.vercel.app/sebastian.jpg',
+  telephone: '+52 775 214 2603',
+  priceRange: '$$',
+  areaServed: { '@type': 'State', name: 'Hidalgo, México' },
+  availableService: [
+    { '@type': 'MedicalTherapy', name: 'Terapia Cognitivo-Conductual (TCC)' },
+    { '@type': 'MedicalTherapy', name: 'Terapia de Aceptación y Compromiso (ACT)' },
+    { '@type': 'MedicalTherapy', name: 'Terapia individual y de pareja' },
+  ],
+  department: [
+    {
+      '@type': 'MedicalClinic',
+      name: 'Medical Center Jardines del Sur',
+      telephone: '+52 775 214 2603',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Tulancingo',
+        addressRegion: 'Hidalgo',
+        addressCountry: 'MX',
+      },
+    },
+    {
+      '@type': 'MedicalClinic',
+      name: 'Hospital Intermédica',
+      telephone: '+52 775 214 2603',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Pachuca',
+        addressRegion: 'Hidalgo',
+        addressCountry: 'MX',
+      },
+    },
+  ],
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -40,7 +91,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className="antialiased text-slate-800 bg-white">{children}</body>
+      <body className="antialiased text-slate-800 bg-white">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        {children}
+        <WhatsAppFloat />
+      </body>
     </html>
   )
 }
