@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Footer() {
   const navLinks = [
     ['Inicio', '/'],
-    ['Sobre mi', '/sobre-mi'],
+    ['Sobre mí', '/sobre-mi'],
     ['Servicios', '/servicios'],
     ['Consultorios', '/consultorios'],
     ['Agendar cita', '/cita'],
@@ -13,15 +13,15 @@ export default function Footer() {
     <footer className="bg-slate-900 text-slate-400 py-16 px-6">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
         <div>
-          <h3 className="text-white font-semibold text-lg mb-1">Psic. Sebastian Escorza</h3>
+          <h3 className="text-white font-semibold text-lg mb-1">Psic. Sebastián Escorza</h3>
           <p className="text-primary-400 text-sm mb-4">Psicoterapia ACT</p>
           <p className="text-sm leading-relaxed">
-            Acompanamiento psicoterapeutico profesional con base en Terapia de Aceptacion y Compromiso.
+            Acompañamiento psicoterapéutico profesional con base en Terapia de Aceptación y Compromiso.
           </p>
         </div>
 
         <div>
-          <h4 className="text-white font-semibold mb-4">Navegacion</h4>
+          <h4 className="text-white font-semibold mb-4">Navegación</h4>
           <ul className="space-y-2">
             {navLinks.map(([label, href]) => (
               <li key={href}>
@@ -62,7 +62,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-6xl mx-auto mt-12 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
-        <span>2026 Psic. C. Sebastian Escorza Reyes. Todos los derechos reservados.</span>
+        <span>2026 Psic. C. Sebastián Escorza Reyes. Todos los derechos reservados.</span>
         <div className="flex items-center gap-3 flex-wrap justify-center">
           <span>Psicoterapia ACT · Pachuca, Hidalgo</span>
           <span className="text-slate-700">·</span>
