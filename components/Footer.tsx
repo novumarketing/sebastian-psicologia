@@ -66,7 +66,7 @@ export default function Footer() {
         <div className="flex items-center gap-3 flex-wrap justify-center">
           <span>Psicoterapia ACT · Pachuca, Hidalgo</span>
           <span className="text-slate-700">·</span>
-          <a href="https://novumarketing.mx" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 transition-colors font-medium">
+          <a href="https://novu-web-ten.vercel.app" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 transition-colors font-medium">
             Desarrollado por NOVU
           </a>
         </div>
