@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function About() {
   return (
@@ -7,9 +8,13 @@ export default function About() {
         {/* Left - Photo */}
         <div className="relative">
           <div className="relative overflow-hidden rounded-2xl shadow-2xl aspect-[3/4] max-w-sm mx-auto lg:mx-0 bg-primary-100">
-            <img
+            <Image
               src="/sebastian.jpg"
               alt="Psic. C. Sebastián Escorza Reyes"
+              width={1024}
+              height={1280}
+              priority
+              sizes="(max-width: 1024px) 100vw, 24rem"
               className="w-full h-full object-cover object-top"
             />
           </div>

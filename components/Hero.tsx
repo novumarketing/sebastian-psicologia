@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Hero() {
   const stats = [
@@ -68,7 +69,15 @@ export default function Hero() {
           <div className="relative mx-auto lg:mx-0 w-full max-w-sm">
             <div className="absolute -inset-4 bg-primary-400/20 rounded-[2rem] blur-2xl" aria-hidden="true" />
             <div className="relative overflow-hidden rounded-3xl shadow-2xl ring-1 ring-white/20 aspect-[4/5] bg-primary-800">
-              <img src="/sebastian.jpg" alt="Psic. C. Sebastián Escorza Reyes" className="w-full h-full object-cover object-top" />
+              <Image
+                src="/sebastian.jpg"
+                alt="Psic. C. Sebastián Escorza Reyes, psicólogo TCC y ACT"
+                width={1024}
+                height={1280}
+                priority
+                sizes="(max-width: 1024px) 100vw, 24rem"
+                className="w-full h-full object-cover object-top"
+              />
             </div>
           </div>
         </div>
