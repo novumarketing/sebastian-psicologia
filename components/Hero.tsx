@@ -32,7 +32,7 @@ export default function Hero() {
           Psic. C. Sebastián Escorza Reyes
         </p>
         <p className="text-base md:text-lg text-primary-200 mb-12 max-w-2xl mx-auto leading-relaxed">
-          Psicólogo especialista en Terapia Cognitivo-Conductual (TCC) con Aceptación y Compromiso (ACC).
+          Psicólogo especialista en Terapia Cognitivo-Conductual (TCC) con Aceptación y Compromiso (ACT).
           Atención profesional, empática y basada en evidencia.
         </p>
 

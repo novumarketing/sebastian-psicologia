@@ -10,7 +10,7 @@ export default function FAQ() {
     },
     {
       q: '¿En qué consisten tus enfoques terapéuticos?',
-      a: 'Trabajo con Terapia Cognitivo-Conductual (TCC) y Terapia de Aceptación y Compromiso (ACC), enfoques respaldados por evidencia científica que te ayudan a identificar patrones de pensamiento, desarrollar flexibilidad psicológica y actuar de acuerdo con lo que realmente importa para ti.',
+      a: 'Trabajo con Terapia Cognitivo-Conductual (TCC) y Terapia de Aceptación y Compromiso (ACT), enfoques respaldados por evidencia científica que te ayudan a identificar patrones de pensamiento, desarrollar flexibilidad psicológica y actuar de acuerdo con lo que realmente importa para ti.',
     },
   ]
 

@@ -34,7 +34,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="flex flex-col leading-tight">
           <span className={`font-semibold text-sm tracking-wide ${t ? 'text-white' : 'text-primary-700'}`}>Psic. Sebastián Escorza</span>
-          <span className={`text-xs ${t ? 'text-blue-100' : 'text-slate-500'}`}>Psicoterapia ACC · TCC</span>
+          <span className={`text-xs ${t ? 'text-blue-100' : 'text-slate-500'}`}>Psicoterapia ACT · TCC</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-7">

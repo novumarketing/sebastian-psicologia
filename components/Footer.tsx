@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
         <div>
           <h3 className="text-white font-semibold text-lg mb-1">Psic. Sebastian Escorza</h3>
-          <p className="text-primary-400 text-sm mb-4">Psicoterapia ACC</p>
+          <p className="text-primary-400 text-sm mb-4">Psicoterapia ACT</p>
           <p className="text-sm leading-relaxed">
             Acompanamiento psicoterapeutico profesional con base en Terapia de Aceptacion y Compromiso.
           </p>
@@ -64,7 +64,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto mt-12 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
         <span>2026 Psic. C. Sebastian Escorza Reyes. Todos los derechos reservados.</span>
         <div className="flex items-center gap-3 flex-wrap justify-center">
-          <span>Psicoterapia ACC · Pachuca, Hidalgo</span>
+          <span>Psicoterapia ACT · Pachuca, Hidalgo</span>
           <span className="text-slate-700">·</span>
           <a href="https://novumarketing.mx" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 transition-colors font-medium">
             Desarrollado por NOVU
